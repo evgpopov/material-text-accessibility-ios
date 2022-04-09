@@ -18,16 +18,10 @@ import PackageDescription
 
 let package = Package(
     name: "MDFTextAccessibility",
-    platforms: [
-        .iOS("8.0"), .tvOS("9.0")
-    ],
     products: [
         .library(name: "MDFTextAccessibility", targets: ["MDFTextAccessibility"])
     ],
     targets: [
-        .target(
-            name: "MDFTextAccessibility",
-            path: "src",
-            publicHeadersPath: ".")
+        .target(name: "MDFTextAccessibility")
     ]
 )
